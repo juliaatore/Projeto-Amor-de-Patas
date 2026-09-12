@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto Amor de Patas</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         CABEÇALHO
+    ============================== -->
+
+    <header>
+
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Projeto Amor de Patas">
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#animais">Animais</a>
+            <a href="#como-ajudar">Como ajudar</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ==============================
+         CONTEÚDO PRINCIPAL
+    ============================== -->
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="apresentacao" id="inicio">
+
+            <div class="texto-apresentacao">
+
+                <span>🐾 CUIDADO, AMOR E RECOMEÇOS</span>
+
+                <h2>Todo animal merece uma segunda chance</h2>
+
+                <p>
+                    O Projeto Amor de Patas nasceu para transformar histórias
+                    de abandono em histórias de amor, cuidado e novos começos.
+                </p>
+
+                <p>
+                    Resgatamos, cuidamos e buscamos lares responsáveis para
+                    animais que precisam de uma nova oportunidade.
+                </p>
+
+                <a href="#como-ajudar">Quero ajudar</a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE NÓS -->
+
+        <section class="sobre" id="sobre">
+
+            <div class="texto-sobre">
+
+                <span>💚 SOBRE NÓS</span>
+
+                <h2>Um projeto movido pelo amor</h2>
+
+                <p>
+                    O Projeto Amor de Patas acredita que todo animal merece
+                    respeito, cuidado e uma família para chamar de sua.
+                </p>
+
+                <p>
+                    Nosso trabalho é voltado ao resgate de animais em situação
+                    de abandono e maus-tratos, oferecendo cuidados e buscando
+                    um novo lar para cada um deles.
+                </p>
+
+                <p>
+                    Mais do que resgatar animais, queremos construir uma rede
+                    de pessoas dispostas a transformar vidas através do amor.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANIMAIS -->
+
+        <section id="animais">
+
+            <h2>Conheça nossos animais</h2>
+
+            <div class="animais">
+
+                <!-- LUNA -->
+
+                <div class="animal">
+
+                    <img src="../img/animal1.png"
+                        alt="Animal disponível para adoção">
+
+                    <h3>Luna</h3>
+
+                    <p>
+                        Esperando por uma família cheia de amor.
+                    </p>
+
+                    <button class="btn-adotar" data-animal="Luna">
+                        Quero adotar 🐾
+                    </button>
+
+                </div>
+
+
+                <!-- THOR -->
+
+                <div class="animal">
+
+                    <img src="../img/animal2.png"
+                        alt="Animal disponível para adoção">
+
+                    <h3>Thor</h3>
+
+                    <p>
+                        Um companheiro carinhoso esperando por você.
+                    </p>
+
+                    <button class="btn-adotar" data-animal="Thor">
+                        Quero adotar 🐾
+                    </button>
+
+                </div>
+
+
+                <!-- MAX -->
+
+                <div class="animal">
+
+                    <img src="../img/animal3.png"
+                        alt="Animal disponível para adoção">
+
+                    <h3>Max</h3>
+
+                    <p>
+                        Pronto para ganhar um novo lar.
+                    </p>
+
+                    <button class="btn-adotar" data-animal="Max">
+                        Quero adotar 🐾
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO AJUDAR -->
+
+        <section class="como-ajudar" id="como-ajudar">
+
+            <h2>Como você pode ajudar</h2>
+
+            <div class="ajudas">
+
+                <!-- ADOÇÃO -->
+
+                <div class="ajuda">
+
+                    <span>🐾</span>
+
+                    <h3>Adote</h3>
+
+                    <p>
+                        Dê uma nova chance a um animal e transforme uma vida
+                        através do amor.
+                    </p>
+
+                </div>
+
+
+                <!-- VOLUNTARIADO -->
+
+                <div class="ajuda">
+
+                    <span>💚</span>
+
+                    <h3>Seja voluntário</h3>
+
+                    <p>
+                        Doe seu tempo e ajude nossa equipe a cuidar dos animais
+                        resgatados.
+                    </p>
+
+                </div>
+
+
+                <!-- DOAÇÃO -->
+
+                <div class="ajuda">
+
+                    <span>✨</span>
+
+                    <h3>Faça uma doação</h3>
+
+                    <p>
+                        Sua contribuição ajuda a garantir alimentação, cuidados
+                        e tratamento para nossos animais.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+
+            <div class="formulario-ajuda">
+
+                <h3>💚 Quero fazer parte!</h3>
+
+                <p>
+                    Preencha seus dados e conte como você gostaria de ajudar.
+                </p>
+
+                <form id="formAjuda">
+
+                    <label for="nome">Nome</label>
+
+                    <input type="text"
+                        id="nome"
+                        placeholder="Digite seu nome">
+
+
+                    <label for="email">E-mail</label>
+
+                    <input type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail">
+
+
+                    <label for="tipoAjuda">
+                        Como você gostaria de ajudar?
+                    </label>
+
+                    <select id="tipoAjuda">
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="adocao">
+                            Quero adotar
+                        </option>
+
+                        <option value="voluntario">
+                            Quero ser voluntário
+                        </option>
+
+                        <option value="doacao">
+                            Quero fazer uma doação
+                        </option>
+
+                    </select>
+
+
+                    <label for="mensagem">Mensagem</label>
+
+                    <textarea id="mensagem"
+                        placeholder="Conte um pouco sobre seu interesse..."></textarea>
+
+
+                    <button type="submit">
+                        Enviar interesse 🐾
+                    </button>
+
+                    <p id="mensagem-sucesso"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contato" id="contato">
+
+            <span>📩 FALE CONOSCO</span>
+
+            <h2>Entre em contato</h2>
+
+            <p>
+                Quer adotar, ser voluntário ou saber mais sobre o nosso trabalho?
+                Entre em contato com o Projeto Amor de Patas.
+            </p>
+
+            <div class="informacoes-contato">
+
+                <!-- E-MAIL -->
+
+                <div>
+
+                    <span>📧</span>
+
+                    <h3>E-mail</h3>
+
+                    <p>
+                        projetoamordepatas12@gmail.com
+                    </p>
+
+                </div>
+
+
+                <!-- TELEFONE -->
+
+                <div>
+
+                    <span>📱</span>
+
+                    <h3>Telefone</h3>
+
+                    <p>
+                        (11) 98304-8485
+                    </p>
+
+                </div>
+
+
+                <!-- LOCALIZAÇÃO -->
+
+                <div>
+
+                    <span>📍</span>
+
+                    <h3>Localização</h3>
+
+                    <p>
+                        São Paulo - SP
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         RODAPÉ
+    ============================== -->
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <h2>🐾 Projeto Amor de Patas</h2>
+
+            <p>
+                Resgatando vidas, construindo novos laços.
+            </p>
+
+            <div class="footer-redes">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+            &copy; 2026 Projeto Amor de Patas.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- ==============================
+         VLIBRAS
+    ============================== -->
+
+    <div vw class="enabled">
+
+        <div vw-access-button class="active"></div>
+
+        <div vw-plugin-wrapper>
+
+            <div class="vw-plugin-top-wrapper"></div>
+
+        </div>
+
+    </div>
+
+<!-- Botão de descrição em áudio -->
+<button id="botao-audio" type="button">
+    🔊 Ouvir descrição
+</button>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <!-- ==============================
+         EMAILJS
+    ============================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <!-- ==============================
+         JAVASCRIPT DO PROJETO
+    ============================== -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
