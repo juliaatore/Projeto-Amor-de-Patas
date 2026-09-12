@@ -8,7 +8,7 @@
     <title>Projeto Amor de Patas</title>
 
     <!-- CSS principal -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
@@ -22,10 +22,9 @@
     ============================== -->
 
     <header>
-
-        <div class="logo">
-            <img src="../img/logo.png" alt="Logo Projeto Amor de Patas">
-        </div>
+    <div class="logo">
+    <img src="img/logo.png" alt="Logo Projeto Amor de Patas">
+    </div>
 
         <nav>
             <a href="#inicio">Início</a>
@@ -114,7 +113,7 @@
 
                 <div class="animal">
 
-                    <img src="../img/animal1.png"
+                    <img src="img/animal1.png"
                         alt="Animal disponível para adoção">
 
                     <h3>Luna</h3>
@@ -134,7 +133,7 @@
 
                 <div class="animal">
 
-                    <img src="../img/animal2.png"
+                    <img src="img/animal2.png"
                         alt="Animal disponível para adoção">
 
                     <h3>Thor</h3>
@@ -154,7 +153,7 @@
 
                 <div class="animal">
 
-                    <img src="../img/animal3.png"
+                    <img src="img/animal3.png"
                         alt="Animal disponível para adoção">
 
                     <h3>Max</h3>
@@ -232,74 +231,56 @@
             </div>
 
 
-            <!-- FORMULÁRIO -->
+                 <!-- FORMULÁRIO -->
 
-            <div class="formulario-ajuda">
+<div class="formulario-ajuda">
 
-                <h3>💚 Quero fazer parte!</h3>
+    <h3>💚 Quero fazer parte!</h3>
 
-                <p>
-                    Preencha seus dados e conte como você gostaria de ajudar.
-                </p>
+    <p>
+        Preencha seus dados e conte como você gostaria de ajudar.
+    </p>
 
-                <form id="formAjuda">
+    <form id="formAjuda">
 
-                    <label for="nome">Nome</label>
+        <label for="nome">Nome <span class="obrigatorio">*</span></label>
+<input type="text" id="nome" placeholder="Digite seu nome" required>
 
-                    <input type="text"
-                        id="nome"
-                        placeholder="Digite seu nome">
+<label for="email">E-mail <span class="obrigatorio">*</span></label>
+<input type="email" id="email" placeholder="Digite seu e-mail" required>
 
+<label for="tipoAjuda">
+    Como você gostaria de ajudar? <span class="obrigatorio">*</span>
+</label>
 
-                    <label for="email">E-mail</label>
+<select id="tipoAjuda" required>
+    <option value="">Selecione uma opção</option>
+    <option value="adocao">Quero adotar</option>
+    <option value="voluntario">Quero ser voluntário</option>
+    <option value="doacao">Quero fazer uma doação</option>
+</select>
 
-                    <input type="email"
-                        id="email"
-                        placeholder="Digite seu e-mail">
+<label for="mensagem">
+    Mensagem <span class="obrigatorio">*</span>
+</label>
 
+<textarea
+    id="mensagem"
+    placeholder="Conte um pouco sobre seu interesse..."
+    required
+></textarea>
 
-                    <label for="tipoAjuda">
-                        Como você gostaria de ajudar?
-                    </label>
+        <button type="submit">
+            Enviar interesse 🐾
+        </button>
 
-                    <select id="tipoAjuda">
+        <p id="mensagem-sucesso"></p>
 
-                        <option value="">
-                            Selecione uma opção
-                        </option>
+    </form>
 
-                        <option value="adocao">
-                            Quero adotar
-                        </option>
+    </div>  
 
-                        <option value="voluntario">
-                            Quero ser voluntário
-                        </option>
-
-                        <option value="doacao">
-                            Quero fazer uma doação
-                        </option>
-
-                    </select>
-
-
-                    <label for="mensagem">Mensagem</label>
-
-                    <textarea id="mensagem"
-                        placeholder="Conte um pouco sobre seu interesse..."></textarea>
-
-
-                    <button type="submit">
-                        Enviar interesse 🐾
-                    </button>
-
-                    <p id="mensagem-sucesso"></p>
-
-                </form>
-
-            </div>
-
-        </section>
+             </section>
 
 
         <!-- CONTATO -->
@@ -448,7 +429,7 @@
          JAVASCRIPT DO PROJETO
     ============================== -->
 
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

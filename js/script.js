@@ -25,18 +25,8 @@ botaoAjuda.addEventListener('click', function () {
 
 });
 
-
 // =========================================
-// 3. CONFIGURAÇÃO DO EMAILJS
-// =========================================
-
-emailjs.init({
-    publicKey: 'Iu0YeScqcmlSMycqY'
-});
-
-
-// =========================================
-// 4. FORMULÁRIO "QUERO FAZER PARTE"
+// 3. FORMULÁRIO "QUERO FAZER PARTE"
 // =========================================
 
 formulario.addEventListener('submit', function (event) {
@@ -45,78 +35,21 @@ formulario.addEventListener('submit', function (event) {
     event.preventDefault();
 
 
-    // Captura os dados preenchidos pelo usuário
+    // Captura o nome preenchido
     const nome = document.querySelector('#nome').value.trim();
-    const email = document.querySelector('#email').value.trim();
-    const tipoAjuda = document.querySelector('#tipoAjuda').value;
-    const mensagem = document.querySelector('#mensagem').value.trim();
 
 
-    // -----------------------------------------
-    // VALIDAÇÃO DOS CAMPOS
-    // -----------------------------------------
+    // Exibe mensagem de sucesso
+    mensagemSucesso.textContent =
+        '💚 Obrigado, ' +
+        nome +
+        '! Seu interesse foi registrado com sucesso.';
 
-    if (
-        nome === '' ||
-        email === '' ||
-        tipoAjuda === '' ||
-        mensagem === ''
-    ) {
-
-        alert('🐾 Por favor, preencha todos os campos.');
-
-        return;
-    }
+    mensagemSucesso.style.display = 'block';
 
 
-    // -----------------------------------------
-    // ENVIO DO FORMULÁRIO PELO EMAILJS
-    // -----------------------------------------
-
-    emailjs.send(
-        'service_n871vlj',
-        'template_saiaaks',
-        {
-            nome: nome,
-            email: email,
-            tipoAjuda: tipoAjuda,
-            mensagem: mensagem
-        }
-    )
-
-    .then(function () {
-
-        // Exibe mensagem de sucesso
-        mensagemSucesso.textContent =
-            '💚 Obrigado, ' +
-            nome +
-            '! Seu interesse foi enviado com sucesso.';
-
-        mensagemSucesso.style.display = 'block';
-
-
-        // Limpa os campos do formulário
-        formulario.reset();
-
-    })
-
-
-    .catch(function (error) {
-
-        // Exibe o erro no console para facilitar a identificação
-        console.error(
-            'Erro ao enviar o formulário:',
-            error
-        );
-
-
-        // Informa o usuário sobre o problema
-        alert(
-            '❌ Não foi possível enviar sua mensagem agora. ' +
-            'Tente novamente em alguns instantes.'
-        );
-
-    });
+    // Limpa os campos do formulário
+    formulario.reset();
 
 });
 
