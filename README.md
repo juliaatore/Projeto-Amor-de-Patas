@@ -106,3 +106,7 @@ Estudante de Análise e Desenvolvimento de Sistemas, com foco em Desenvolvimento
 Projeto Amor de Patas
 
 Resgatando vidas, construindo novos laços.
+
+## Fluxo de desenvolvimento
+
+Este projeto utiliza uma estrutura baseada no GitFlow, com as branches `main`, `develop` e `feature/gitflow`.
